@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header {
+  width: 90%;
+  height: 50px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .navbar1 {
+  width: 10%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .navbar1 .hamburger {
+  width: 60px;
+}
+
+body header .navbar1 .hamburger img {
+  width: 20px;
+}
+
+body header .navbar2 {
+  width: 30%;
+  margin-top: 20px;
+}
+
+body header .navbar2 ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body header .navbar2 ul li:nth-child(2) {
+  color: red;
+}
+
+body header .logo {
+  width: 20rem;
+  height: 3rem;
+  background-image: url(/img/logo.jpg);
+  background-position: center;
+  background-size: 55%;
+  background-repeat: no-repeat;
+}
+
+body header .navbar3 {
+  width: 30%;
+  margin-top: 20px;
+}
+
+body header .navbar3 ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body header .navbar4 {
+  width: 10%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  min-height: 20rem;
+}
+
+body main .text {
+  width: 60%;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .text p {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 40px;
+  width: 30rem;
+}
+
+body main .photo {
+  width: 100%;
+  height: 30rem;
+  background-color: blue;
+  background-image: url(/img/sain-lauren.jpg);
+  background-size: cover;
+}
+
+@media (max-width: 747px) {
+  .navbar2 {
+    display: none;
+  }
+  .navbar3 {
+    display: none;
+  }
+  header .navbar1 {
+    width: 30% !important;
+  }
+  header .logo {
+    width: 20rem;
+    height: 3rem !important;
+    background-size: 75% !important;
+  }
+  header .navbar4 {
+    width: 40% !important;
+  }
+  main {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  main .text {
+    width: 100% !important;
+  }
+  main .text p {
+    width: 20rem !important;
+    font-size: 30px !important;
+  }
+  main .photo {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
